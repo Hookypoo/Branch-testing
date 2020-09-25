@@ -36,6 +36,12 @@ nav ul li {
     margin-left: 10px;
     padding-top: 80px;    
 }
+.menu-icon {
+    color: red;
+    visibility: hidden;
+    padding: 75px 20px 0;
+    margin-bottom: 0;
+}
 a {
     text-decoration: none;
     color: white;    
@@ -220,14 +226,7 @@ aside p  {
     width: 180px;
     color: blue;
 }
-/* ----------------------------footer----------------------------------- */
-.social-info {
-    background-color: grey;
-    display: flex;
-    border: 1px solid;
-    height: 150px;
-    width: 100%;
-}
+
 /* --------------------------contact page------------------------------- */
 .contact-form {
     background-color: teal;    
@@ -270,7 +269,7 @@ aside p  {
 .cart-img {
     color: chartreuse;
     margin-top: 75px;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 .cart-page {
     margin: 80px auto;
@@ -349,16 +348,20 @@ th:last-child {
 .about-labels {
     color: teal;
 }
+
 /* --------------------------footer----------------------- */
 
-footer {
-    padding-top: 20px;
-    display: flex;
+.social-info {  
+    display: flex;                                    /*footer container*/
+    flex-direction: row;
     flex-wrap: wrap;
-    font-size: 38px; 
-    /* padding: 60px 0 20px; */
+    justify-content: center;
+    background-color: grey;    
+    height: 100%;
+    width: 100%;
 }
-.footer-col-1 {    
+.footer-col-1 {   
+    /*border: 1px solid yellow;*/ 
     margin: 40px;
     margin-left: 150px;
     height: 150px;
@@ -375,7 +378,8 @@ footer {
 .footer-col-1 h3 {
     margin-bottom: 10px;
 }
-.footer-col-2 {    
+.footer-col-2 {  
+    /*border: 1px solid yellow;*/ 
     margin: 40px;
     margin-bottom: 0;
     height: 200px;
@@ -392,7 +396,7 @@ footer {
 .footer-col-2 h3 {
     margin-bottom: 10px;
 }
-.footer-col-3 {    
+.footer-col-3 {   
     margin: 40px;    
     height: 150px;
     width: 450px;
@@ -405,18 +409,12 @@ footer {
 }
 .footer-col-3 h3 {
     margin-bottom: 10px;
+    margin-left: 100px;
 }
-.social-info {
-    background-color: grey;
-    text-align: center;
-    display: flex;
-    border: 1px solid;
-    height: 300px;
-    width: 100%;
-}
+
 .social-icons {
-    border: 1px solid yellow;
-    height: 80px;
+    
+    height: 100%;
 }
 .copyright {
     border-top: 1px solid black;
@@ -461,4 +459,32 @@ footer {
 }
 .youtube-icon:hover {
     transform: translateY(-5px);
+}
+/*---------------------- media query for menu icon ----------------------- */
+@media only screen and (max-width: 800px) {
+
+    /* nav ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        
+    }
+   nav ul li {
+       display: block;
+       margin-right: 50px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+        color: white;
+    } */
+    .menu-icon {
+        visibility: visible;
+    }
+    .thumbs-container {
+        justify-content: center;
+    }
+    .page-content {
+        justify-content: center;
+    }
 }
