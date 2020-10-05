@@ -461,7 +461,7 @@ th:last-child {
     transform: translateY(-5px);
 }
 /*---------------------- media query for menu icon ----------------------- */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 650px) {
 
     /* nav ul {
         position: absolute;
